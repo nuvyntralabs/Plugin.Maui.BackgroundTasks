@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net10.0;net10.0-android;net10.0-ios</TargetFrameworks>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);CS1591</NoWarn>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+
+		<RootNamespace>Plugin.Maui.BackgroundTasks</RootNamespace>
+		<AssemblyName>Plugin.Maui.BackgroundTasks</AssemblyName>
+		<PackageId>Plugin.Maui.BackgroundTasks</PackageId>
+		<Title>.NET MAUI Background Tasks Plugin</Title>
+		<Description>Unified Android/iOS background-task abstraction for .NET MAUI. Schedule one-time and periodic work through JobScheduler on Android and BGTaskScheduler on iOS.</Description>
+		<PackageTags>dotnet-maui;maui;background-tasks;jobscheduler;bgtaskscheduler;android;ios;jobs;scheduling</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<Authors>NugetWorld</Authors>
+		<Company>NugetWorld</Company>
+		<Copyright>Copyright © NugetWorld</Copyright>
+		<Version>1.0.0</Version>
+		<PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts</PackageOutputPath>
+		<IsPackable>true</IsPackable>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<PackageReleaseNotes>Initial release: unified one-time and periodic background tasks for Android JobScheduler and iOS BGTaskScheduler.</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Plugin.Maui.BackgroundTasks.Tests" />
+	</ItemGroup>
+
+</Project>

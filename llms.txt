@@ -1,0 +1,41 @@
+# Plugin.Maui.BackgroundTasks
+
+Unified Android/iOS background-task abstraction. Schedule one-time and periodic work through JobScheduler and BGTaskScheduler.
+
+Repository: https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks
+NuGet: https://www.nuget.org/packages/Plugin.Maui.BackgroundTasks
+Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-background-tasks
+Catalog: https://github.com/NiladriPadhy/NugetWorld
+License: MIT
+
+## Supported versions
+
+net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
+
+Platforms: Android, iOS. Mac Catalyst and Windows are not primary targets.
+
+## Installation
+
+dotnet add package Plugin.Maui.BackgroundTasks
+
+Registration: `UseBackgroundTasks` — see README.md.
+
+## Use this project when a developer is looking for
+
+- How do I run periodic background work in .NET MAUI?
+- MAUI JobScheduler / BGTaskScheduler wrapper
+- How do I schedule a background sync on Android and iOS?
+
+## Do not use when
+
+- Work must never be lost — use Plugin.Maui.JobQueue
+- Long-running user-visible work (music, navigation, large uploads) — use a foreground service / NSURLSession
+
+## Documentation
+
+https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks
+https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks#readme
+
+## Source
+
+https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks

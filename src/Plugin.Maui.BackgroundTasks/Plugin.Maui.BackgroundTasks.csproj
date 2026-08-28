@@ -17,15 +17,15 @@
 		<PackageId>Plugin.Maui.BackgroundTasks</PackageId>
 		<Title>.NET MAUI BackgroundTasks — JobScheduler and BGTaskScheduler</Title>
 		<Description>Unified Android/iOS background-task abstraction for .NET MAUI. Schedule one-time and periodic work through JobScheduler on Android and BGTaskScheduler on iOS.</Description>
-		<PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;nugetworld;background-tasks;jobscheduler;bgtaskscheduler;jobs;scheduling;periodic</PackageTags>
+		<PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;mauiessentials;background-tasks;jobscheduler;bgtaskscheduler;jobs;scheduling;periodic</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<Authors>NugetWorld</Authors>
-		<Company>NugetWorld</Company>
-		<Copyright>Copyright © NugetWorld</Copyright>
+		<Authors>MauiEssentials</Authors>
+		<Company>MauiEssentials</Company>
+		<Copyright>Copyright © MauiEssentials</Copyright>
 		<Version>1.0.2</Version>
 		<PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts</PackageOutputPath>
 		<IsPackable>true</IsPackable>

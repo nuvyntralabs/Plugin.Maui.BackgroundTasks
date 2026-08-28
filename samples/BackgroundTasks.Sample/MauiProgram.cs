@@ -5,8 +5,8 @@ namespace BackgroundTasks.Sample;
 
 public static class MauiProgram
 {
-	public const string RefreshTaskId = "com.nugetworld.backgroundtasks.sample.refresh";
-	public const string ProcessingTaskId = "com.nugetworld.backgroundtasks.sample.process";
+	public const string RefreshTaskId = "com.mauiessentials.backgroundtasks.sample.refresh";
+	public const string ProcessingTaskId = "com.mauiessentials.backgroundtasks.sample.process";
 
 	public static MauiApp CreateMauiApp()
 	{

@@ -35,8 +35,8 @@
 	</array>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>com.nugetworld.backgroundtasks.sample.refresh</string>
-		<string>com.nugetworld.backgroundtasks.sample.process</string>
+		<string>com.mauiessentials.backgroundtasks.sample.refresh</string>
+		<string>com.mauiessentials.backgroundtasks.sample.process</string>
 	</array>
 </dict>
 </plist>

@@ -2,10 +2,10 @@
 
 Unified Android/iOS background-task abstraction. Schedule one-time and periodic work through JobScheduler and BGTaskScheduler.
 
-Repository: https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks
+Repository: https://github.com/nuvyntralabs/Plugin.Maui.BackgroundTasks
 NuGet: https://www.nuget.org/packages/Plugin.Maui.BackgroundTasks
 Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-background-tasks
-Catalog: https://github.com/NiladriPadhy/MauiEssentials
+Catalog: https://github.com/nuvyntralabs/MauiEssentials
 License: MIT
 
 ## Supported versions
@@ -33,9 +33,9 @@ Registration: `UseBackgroundTasks` — see README.md.
 
 ## Documentation
 
-https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks
-https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks#readme
+https://github.com/nuvyntralabs/Plugin.Maui.BackgroundTasks
+https://github.com/nuvyntralabs/Plugin.Maui.BackgroundTasks#readme
 
 ## Source
 
-https://github.com/NiladriPadhy/Plugin.Maui.BackgroundTasks
+https://github.com/nuvyntralabs/Plugin.Maui.BackgroundTasks

@@ -38,9 +38,10 @@ public sealed class PluginJobService : JobService
 				var result = BackgroundTaskExecutor.Execute(taskId, parametersJson, CancellationToken.None);
 				retry = result == BackgroundTaskResult.Retry;
 			}
-			catch
+			catch (Exception ex)
 			{
-				retry = true;
+				Android.Util.Log.Warn("Plugin.Maui.BackgroundTasks", $"Background task '{taskId}' failed: {ex}");
+				retry = ex is not OperationCanceledException;
 			}
 			finally
 			{

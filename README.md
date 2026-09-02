@@ -59,6 +59,8 @@ public sealed class SyncTask : IBackgroundTask
 
 Return `Retry` when the work should be attempted again (honored by Android JobScheduler).
 
+On Android, handler exceptions are written to logcat (`Plugin.Maui.BackgroundTasks`). `OperationCanceledException` is treated as a cancelled run and is not retried.
+
 ## Schedule work
 
 ```csharp

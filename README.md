@@ -99,9 +99,15 @@ var result = await scheduler.RunNowAsync("com.example.app.sync");
 
 ### Android
 
-The package declares `WAKE_LOCK`, `RECEIVE_BOOT_COMPLETED`, and `ACCESS_NETWORK_STATE`, and registers a `JobService`. Jobs persist across process death and reboots.
+The package declares these and registers a `JobService`. Keep them on the host if you merge manifests manually:
 
-No extra manifest identifiers are required. Use reverse-DNS task ids so they stay unique across the app.
+```xml
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
+Jobs persist across process death and reboots. No extra manifest identifiers are required. Use reverse-DNS task ids so they stay unique across the app.
 
 ### iOS
 

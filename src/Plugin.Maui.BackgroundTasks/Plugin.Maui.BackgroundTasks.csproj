@@ -27,7 +27,7 @@
 		<Authors>MauiEssentials</Authors>
 		<Company>MauiEssentials</Company>
 		<Copyright>Copyright © MauiEssentials</Copyright>
-		<Version>1.0.6</Version>
+		<Version>1.0.7</Version>
 		<PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts</PackageOutputPath>
 		<IsPackable>true</IsPackable>
 		<IncludeSymbols>true</IncludeSymbols>

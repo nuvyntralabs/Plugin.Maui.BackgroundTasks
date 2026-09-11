@@ -4,7 +4,7 @@ Unified Android/iOS background-task abstraction. Schedule one-time and periodic 
 
 Repository: https://github.com/nuvyntralabs/Plugin.Maui.BackgroundTasks
 NuGet: https://www.nuget.org/packages/Plugin.Maui.BackgroundTasks
-Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-background-tasks
+Paper: https://nuvyntralabs.github.io/packages/plugin-maui-background-tasks/
 Catalog: https://github.com/nuvyntralabs/MauiEssentials
 License: MIT
 
